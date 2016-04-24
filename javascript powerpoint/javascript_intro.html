@@ -1,0 +1,251 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css" />
+	<script type="text/javascript" src="libs/jquery-2.2.3.min.js">
+	</script>
+	<script type="text/javascript" src="libs/bootstrap.min.js">
+	</script>	
+	<script type="text/javascript" src="javascript_intro.js">
+	</script>
+	
+	<style>
+		body {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="page">
+			<div class="page-header">
+				<h1>A History of JavaScript 
+					<br /><small><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">From Wikipedia</a></small>
+				</h1>
+			</div>
+			<div>
+			Javascript was developed in 10 days in May 1995 by Brendan Eich at Netscape as a lightweight interpreted language for client side scripting within the Netscape web browser 
+			<ul>
+			<li>
+			It was meant to be a competitor to Microsoft's Visual Basic on Internet Explorer and aimed to appeal to non-professional programmers, to make it easy for everyone to expand and improve contents that could be navigated through Netscape. 
+			</li>
+			<li>
+			It was originally developed under the name Mocha and officially called LiveScript when shipped. Only later it was deployed with its current name of JavaScript. 
+			</li>
+			<li>
+			In November 1996, Netscape submitted JavaScript to Ecma International and in June 1997 it was accepted and specified by the standard ECMA-262. The standard specification of JavaScript is called ECMAScript, and the latest version is ES 6.
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>Getting started
+					<br /><small>Basic tools</small>
+				</h1>
+			</div>
+			<div>
+			A text editor and a modern browser are ALL you need to start working with JavaScript! Possibly an internet connection.
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>Other tools</h1>
+			</div>
+			<div>
+			<ul>
+			<li>
+			More browsers - remember to always cross-browser test your code, and possibly cross-device test it (same browser on different devices doesn't always work out well). 
+			</li>
+			<li>
+			Commonly used text editors are Notepad++ and Sublime Text. For C#ers, you can write your JavaScript from VisualStudio.
+			</li>
+			<li>
+			You can easily debug from the browser inspector.
+			</li>
+			<li>
+			Another useful tool is JSFiddle at <a href="https://jsfiddle.net/" target="_blank">https://jsfiddle.net/</a>
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+				<div class="page">
+			<div class="page-header">
+				<h1>Javascript weirdness
+				<br /><small>Part 1</small>
+				</h1>
+			</div>
+			<div>
+			JavaScript is a dynamic and (generally) interpreted programming language.
+			<ul>
+			<li>
+			dynamic: many operations are performed at runtime instead of compile time. For example, the code in a function can change at runtime.
+			</li>
+			<li>
+			functions are first-class citizens: they are treated like variables, can actually be assigned to variables (will not be global), can be passed to other functions, can be returned to be used later, etc...
+			</li>
+			<li>
+			JavaScript supports <a href="https://jsfiddle.net/gcoleman0828/ouxhms7h/1/" target="_blank">closures</a>
+			</li>
+			<li>
+			interpreted: the code is run directly by an interpreter instead of being compiled to machine code (it is translated in subroutines which are already available as machine code)
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+				<div class="page">
+			<div class="page-header">
+				<h1>Javascript weirdness
+				<br /><small>Part 2</small>
+				</h1>
+			</div>
+			<div>
+			JavaScript is weakly and dynamically typed – it only has numbers and strings but the same variable can hold a number and then a string or viceversa
+			<ul>
+			<li>
+			var number = 123;
+			</li>
+			<li>
+			var string = 'abc';
+			</li>
+			<li>
+			you can divide a number by a string! :)
+			</li>
+			<li>
+			<a href="https://www.destroyallsoftware.com/talks/wat" target="_blank"> wat (from minute 1:20)</a>
+			</li>
+			<li>
+			you can pass a list of absolutely mixed things to a single method and use it, provided you know how to use it: 
+			<a href="https://jsfiddle.net/a2b6rhtd/3/" target="_blank">a fiddle</a> 
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>The DOM</h1>
+			</div>
+			<div>
+			JavaScript is generally used to access the DOM in HTML pages on the web. DOM stands for Document Object Model: 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">a definition</a>
+			<ul>
+			<li>
+			it's a programming interface that models any HTML page on the web as a tree. By navigating the nodes on the tree, it is possible via a scripting language like JavaScript, to change the HTML and modify the page without going back to the server 
+			</li>
+			<li>
+			you can use <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_ajax" target="_blank">ajax</a> to ask questions to the server without reloading the full page
+			</li>
+			<li>
+			in the document there will always be a body tag
+			</li>
+			<li>
+			a tag can have one unique id and several attributes
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>How to find elements in the DOM</h1>
+			</div>
+			<div>
+			<ul>
+			<li>
+			JavaScript allows you to getElementById, getElementByTagName, getElementByClassName
+			</li>
+			<li>
+			Jquery provides css like selectors to get almost everything: 
+			<a href="https://oscarotero.com/jquery/" target="_blank">a cheatsheet</a>
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>An example
+				<br /><small>JavaScript in action</small>
+				</h1>
+			</div>
+			<div>
+			Let's take a look at how my presentation works 
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>How to test your JavaScript</h1>
+			</div>
+			<div>
+			To test your JavaScript, see <a href="http://jasmine.github.io/" target="_blank">Jasmine</a> 
+			(and <a href="https://github.com/mmanela/chutzpah" target="_blank">Chutzpah</a> if you work in VisualStudio)
+			<ul>
+			<li>
+			Jasmine supports suites with specs (similar to tests and test cases)
+			</li>
+			<li>
+			Jasmine supports expectations (similar to asserts)
+			</li>
+			<li>
+			Jasmine supports spies (similar to mocks)
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="page">
+			<div class="page-header">
+				<h1>Other applications for JavaScript
+				<br />
+				<small>
+				aside from client side scripting in web development
+				</small></h1>
+			</div>
+			<div>
+			<ul>
+			<li>
+			<a href="https://nodejs.org/en/" target="_blank">Node.js</a> 
+			</li>
+			<li>
+			<a href="http://phonegap.com/" target="_blank">PhoneGap</a>
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+			<div class="page">
+			<div class="page-header">
+				<h1>Other sources
+				<br />
+				<small>
+				where you can learn the basics
+				</small></h1>
+			</div>
+			<div>
+			<ul>
+			<li>
+			<a href="http://www.w3schools.com/js/" target="_blank">
+			W3schools</a>
+			</li>
+			<li>
+			<a href="https://www.udacity.com/course/javascript-design-patterns--ud989" target="_blank">
+			Udacity</a>
+			</li>
+			<li>
+			<a href="http://www.codeproject.com/Articles/577080/Create-an-HTML5-and-JavaScript-Maze-Game-with-a-ti" target="_blank">
+			Code Project</a>
+			</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div style="margin-top: 20px">
+			<div id="prev" class="btn btn-default">Prev</div>
+			<div id="next" class="btn btn-default pull-right">Next</div>
+		</div>
+	</div>
+</body>
